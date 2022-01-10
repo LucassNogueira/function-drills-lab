@@ -56,6 +56,11 @@ printName("Cameron");
 
 //CODE HERE
 
+function greeting(name) {
+  nameString = String(name);
+  console.log(`Hello, ${nameString}`);
+}
+greeting("jake");
 ////////////////// PROBLEM 5 ////////////////////
 
 /*

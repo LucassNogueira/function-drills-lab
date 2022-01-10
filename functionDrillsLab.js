@@ -24,6 +24,11 @@ helloWorld();
 
 //CODE HERE
 
+const jsNinja = () => {
+  console.log("I am a JavaScript ninja!");
+};
+
+jsNinja();
 ////////////////// PROBLEM 3 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
@@ -32,6 +37,11 @@ helloWorld();
 */
 
 //CODE HERE
+
+function printName(name) {
+  console.log(name);
+}
+printName("Cameron");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*

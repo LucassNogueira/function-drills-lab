@@ -222,6 +222,14 @@ printAllNames(namesArr);
 
 //CODE HERE
 
+function thatsOdd(num1) {
+  if (num1 % 2 === 0) {
+    console.log("That's not odd!");
+  } else {
+    console.log("That is odd indeed!");
+  }
+}
+const oddChecker = thatsOdd(99);
 ////////////////// PROBLEM 14 ////////////////////
 
 /*

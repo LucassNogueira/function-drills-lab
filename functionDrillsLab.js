@@ -145,9 +145,7 @@ function exclaimFour(str) {
   return str.toUpperCase() + "!!!";
 }
 
-// arrow
-// declaration
-// expression
+declaration;
 
 ////////////////// PROBLEM 10 ////////////////////
 /*

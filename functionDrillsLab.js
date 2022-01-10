@@ -90,6 +90,14 @@ compareNums(5560, 60);
 
 //CODE HERE
 
+function add(num1, num2) {
+  num1 = Number(num1);
+  num2 = Number(num2);
+  console.log(num1 + num2);
+  console.log(typeof num1, typeof num2);
+}
+const sum = add(56, 75);
+
 ////////////////// PROBLEM 7 ////////////////////
 
 /*

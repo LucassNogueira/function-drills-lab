@@ -145,7 +145,7 @@ function exclaimFour(str) {
   return str.toUpperCase() + "!!!";
 }
 
-declaration;
+// declaration;
 
 ////////////////// PROBLEM 10 ////////////////////
 /*
@@ -157,6 +157,18 @@ declaration;
 */
 
 //CODE HERE
+
+function nameCheck(name) {
+  if (name === "steven") {
+    console.log("What is up Steven?");
+  } else if (name === "Bryan") {
+    console.log("Hey Bryan!");
+  } else {
+    console.log(`Cool name, ${name}`);
+  }
+}
+
+const nameGreeting = nameCheck("James");
 
 ////////////////// PROBLEM 11 ////////////////////
 /*

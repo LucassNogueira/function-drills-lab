@@ -182,6 +182,19 @@ const nameGreeting = nameCheck("James");
 
 //CODE HERE
 
+function faveColorFinder(color) {
+  if (color === "red") {
+    console.log("red is a great color.");
+  } else if (color === "green") {
+    console.log("green is a solid favorite color.");
+  } else if (color === "black") {
+    console.log("so trendy.");
+  } else {
+    console.log("you need to evaluate your favorite color choice.");
+  }
+}
+
+const colorRating = faveColorFinder("black");
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 /*

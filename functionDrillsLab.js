@@ -61,6 +61,7 @@ function greeting(name) {
   console.log(`Hello, ${nameString}`);
 }
 greeting("jake");
+
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -73,7 +74,12 @@ greeting("jake");
 */
 
 //CODE HERE
+const compareNums = (num1, num2) => {
+  biggerNum = num1 > num2 ? num1 : num2;
+  console.log(biggerNum);
+};
 
+compareNums(5560, 60);
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 

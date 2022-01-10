@@ -109,9 +109,7 @@ const exclaim = function (str) {
   return str.toUpperCase() + "!!!";
 };
 
-// arrow
-// declaration
-expression;
+//expression
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -124,9 +122,7 @@ const exclaimTwo = (str) => {
   return str.toUpperCase() + "!!!";
 };
 
-arrow;
-// declaration
-// expression
+//arrow;
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -135,6 +131,9 @@ arrow;
   Brownie points if you use a template string
 */
 
+const exclaimThree = (str) => `${str.toUpperCase()}!!!`;
+
+console.log(exclaimThree("hello"));
 ////////////////// PROBLEM 9 ////////////////////
 
 /*

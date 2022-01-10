@@ -58,9 +58,10 @@ printName("Cameron");
 
 function greeting(name) {
   nameString = String(name);
-  console.log(`Hello, ${nameString}`);
+  return `Hello, ${nameString}`;
 }
-greeting("jake");
+const greetingText = greeting("Jake");
+console.log(greetingText);
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -76,10 +77,10 @@ greeting("jake");
 //CODE HERE
 const compareNums = (num1, num2) => {
   biggerNum = num1 > num2 ? num1 : num2;
-  console.log(biggerNum);
+  return biggerNum;
 };
-
-compareNums(5560, 60);
+let number = compareNums(55, 55);
+console.log(number);
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -93,11 +94,10 @@ compareNums(5560, 60);
 function add(num1, num2) {
   num1 = Number(num1);
   num2 = Number(num2);
-  console.log(num1 + num2);
-  console.log(typeof num1, typeof num2);
+  return num1 + num2;
 }
-const sum = add(56, 75);
-
+const sum = add("100", "100");
+console.log(sum);
 ////////////////// PROBLEM 7 ////////////////////
 
 /*

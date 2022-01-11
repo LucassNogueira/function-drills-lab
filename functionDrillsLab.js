@@ -275,43 +275,48 @@
 // const arrayEvaluator = bigOrSmall(bigOrSmallArray);
 // console.log(arrayEvaluator);
 // ////////////////// PROBLEM 16 ////////////////////
-let contestants = [
-  "Katniss",
-  "Peeta",
-  "Fox-face",
-  "Glimmer",
-  "Cato",
-  "Rue",
-  "Thresh",
-  "Clove",
-  "Marvel",
-];
-let loser = "Marvel";
-// /*
-//   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
-//   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
-// */
+// let contestants = [
+//   "Katniss",
+//   "Peeta",
+//   "Fox-face",
+//   "Glimmer",
+//   "Cato",
+//   "Rue",
+//   "Thresh",
+//   "Clove",
+//   "Marvel",
+// ];
+// let loser = "Marvel";
+// // /*
+// //   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
+// //   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
+// // */
 
-// //CODE HERE
-function theEliminator(arr, variable) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === variable) {
-      arr.splice(i, 1);
-      i--;
-    }
-  }
-  return arr;
-}
-let updatedContestants = theEliminator(contestants, loser);
-console.log(updatedContestants);
+// // //CODE HERE
+// function theEliminator(arr, variable) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === variable) {
+//       arr.splice(i, 1);
+//       i--;
+//     }
+//   }
+//   return arr;
+// }
+// let updatedContestants = theEliminator(contestants, loser);
+// console.log(updatedContestants);
 // ////////////////// PROBLEM 17 ////////////////////
-// let sampleString = "Hi, my name is Kylo.";
+let sampleString = "Hi, my name is Kylo.";
 // /*
 //   Write a function that takes in one argument, a string. The function should then console.log that string, in entirely uppercase characters.
 //   Invoke the function, passing in the sampleString (above).
 // */
 
 // //CODE HERE
+
+function test(sample) {
+  console.log(sample.toUpperCase());
+}
+test(sampleString);
 
 // function
 

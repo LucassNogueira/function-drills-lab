@@ -104,9 +104,9 @@
   Uncomment the answer underneath.
 */
 
-const exclaim = function (str) {
-  return str.toUpperCase() + "!!!";
-};
+// const exclaim = function (str) {
+//   return str.toUpperCase() + "!!!";
+// };
 
 //expression
 
@@ -117,9 +117,9 @@ const exclaim = function (str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = (str) => {
-  return str.toUpperCase() + "!!!";
-};
+// const exclaimTwo = (str) => {
+//   return str.toUpperCase() + "!!!";
+// };
 
 //arrow;
 
@@ -157,18 +157,18 @@ const exclaimTwo = (str) => {
 
 //CODE HERE
 
-function nameCheck(name) {
-  if (name === "Steven") {
-    return "What is up Steven?";
-  } else if (name === "Bryan") {
-    return "Hey Bryan!";
-  } else {
-    return `Cool name, ${name}`;
-  }
-}
+// function nameCheck(name) {
+//   if (name === "Steven") {
+//     return "What is up Steven?";
+//   } else if (name === "Bryan") {
+//     return "Hey Bryan!";
+//   } else {
+//     return `Cool name, ${name}`;
+//   }
+// }
 
-const nameGreeting = nameCheck("Steven");
-console.log(nameGreeting);
+// const nameGreeting = nameCheck("Steven");
+// console.log(nameGreeting);
 // ////////////////// PROBLEM 11 ////////////////////
 // /*
 //   Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
@@ -181,20 +181,20 @@ console.log(nameGreeting);
 
 // //CODE HERE
 
-function faveColorFinder(color) {
-  if (color === "red") {
-    return "red is a great color.";
-  } else if (color === "green") {
-    return "green is a solid favorite color.";
-  } else if (color === "black") {
-    return "so trendy.";
-  } else {
-    return "you need to evaluate your favorite color choice.";
-  }
-}
+// function faveColorFinder(color) {
+//   if (color === "red") {
+//     return "red is a great color.";
+//   } else if (color === "green") {
+//     return "green is a solid favorite color.";
+//   } else if (color === "black") {
+//     return "so trendy.";
+//   } else {
+//     return "you need to evaluate your favorite color choice.";
+//   }
+// }
 
-const colorRating = faveColorFinder("red");
-console.log(colorRating);
+// const colorRating = faveColorFinder("red");
+// console.log(colorRating);
 // ////////////////// PROBLEM 12 ////////////////////
 // let namesArr = ["Cameron", "Riley", "Eric", "Brenna", "Karl"];
 // /*
@@ -275,33 +275,35 @@ console.log(colorRating);
 // const arrayEvaluator = bigOrSmall(bigOrSmallArray);
 // console.log(arrayEvaluator);
 // ////////////////// PROBLEM 16 ////////////////////
-// let contestants = [
-//   "Katniss",
-//   "Peeta",
-//   "Fox-face",
-//   "Glimmer",
-//   "Cato",
-//   "Rue",
-//   "Thresh",
-//   "Clove",
-//   "Marvel",
-// ];
-// let loser = "Marvel";
+let contestants = [
+  "Katniss",
+  "Peeta",
+  "Fox-face",
+  "Glimmer",
+  "Cato",
+  "Rue",
+  "Thresh",
+  "Clove",
+  "Marvel",
+];
+let loser = "Marvel";
 // /*
 //   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
 //   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 // */
 
 // //CODE HERE
-// function theEliminator(contestants, loser) {
-//   for (let i = 0; i < contestants.length; i++) {
-//     if (contestants[i] === loser) {
-//       return (newContestants = contestants.splice(i, 1));
-//     }
-//   }
-// }
-// console.log(theEliminator(contestants, loser));
-
+function theEliminator(arr, variable) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === variable) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+  return arr;
+}
+let updatedContestants = theEliminator(contestants, loser);
+console.log(updatedContestants);
 // ////////////////// PROBLEM 17 ////////////////////
 // let sampleString = "Hi, my name is Kylo.";
 // /*

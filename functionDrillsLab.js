@@ -379,33 +379,33 @@ let sampleArray = [0, 1, 2, 3, 4, 7, 5, 6, 8, 9];
 
 // //CODE HERE
 
-function checkingArr(arr) {
-  let comparingvalue = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] <= comparingvalue) {
-      return false;
-    } else {
-      comparingvalue = arr[i];
-    }
-  }
-  return true;
-}
-let arrayIsAscending = checkingArr(sampleArray);
-console.log(arrayIsAscending);
+// function checkingArr(arr) {
+//   let comparingvalue = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] <= comparingvalue) {
+//       return false;
+//     } else {
+//       comparingvalue = arr[i];
+//     }
+//   }
+//   return true;
+// }
+// let arrayIsAscending = checkingArr(sampleArray);
+// console.log(arrayIsAscending);
 // ////////////////// PROBLEM 22 ////////////////////
 
-// let duck = "cute";
+let duck = "cute";
 
-// function bathroom() {
-//   let rubberDuck = "squeaky";
-//   function bathtub() {
-//     let sailorDuck = "nautical";
-//   }
-// }
+function bathroom() {
+  let rubberDuck = "squeaky";
+  function bathtub() {
+    let sailorDuck = "nautical";
+  }
+}
 
-// function pond() {
-//   let realDuck = "fluffy";
-// }
+function pond() {
+  let realDuck = "fluffy";
+}
 
 // /*
 //   There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck.
@@ -414,13 +414,13 @@ console.log(arrayIsAscending);
 // */
 
 // //This array should contain the variable names (as strings) accessible in the global scope.
-// let globalScope = [];
+// let globalScope = ['duck'];
 
 // //This array should contain the variable names (as strings) accessible in the bathroom function.
-// let bathroomScope = [];
+// let bathroomScope = ['rubberduck', 'duck'];
 
 // //This array should contain the variable names (as strings) accessible in the bathtub function.
-// let bathtubScope = [];
+// let bathtubScope = ['sailor duck','rubbersuck','duck'];
 
 // //This array should contain the variable names (as strings) accessible in the pond function.
-// let pondScope = [];
+// let pondScope = ['duck', 'realduck'];
